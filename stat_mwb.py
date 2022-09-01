@@ -71,7 +71,8 @@ def theils_u_df(df) -> pd.DataFrame:
     return udf
 
 
-# @todo - move this routine into separate module
+# Perform undersampling of a dataset using various undersampling method
+# including specialized "cohort" undersampling.
 def under_samp(X, y, sampling_strat=1.0, target=None, under_method='RAND'):
     print(f'under_method = {under_method}')
     print(f'target = {target}')

@@ -34,9 +34,8 @@ def convert_integer(df):
 
 
 ##############################################################################
-# Read a subset of a large file; defaults to reading "preg_link.csv" with "pickled" dtypes file
+# Read a subset of a large file; can import types from a pickled mapping file
 ##############################################################################
-# Note hard-coded default filename (temporary)
 # "types-file" is assumed to be a pickled Python dictionary of column names to Python datatypes.
 def subset_csv(filename, rows=100, columns=10, random=False, types_file=False):
     if random:
